@@ -1,0 +1,63 @@
+@import "./utils/vars";
+@import "./base/normalize";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./utils/mixins";
+
+//%notification {
+//	background-color: #ccc;
+//	padding: 20px;
+//	font-size: 20px;
+//}
+
+//.notification-error {
+//@extend %notification;
+//	background-color: red;
+//}
+
+//.notification-success {
+//	@extend %notification;
+//	background-color: green;
+//} 
+
+
+
+//p {
+//	@include bordered(green);
+//}
+
+//.div {
+//	@include bordered (yellow, dashed);
+//}
+
+
+
+//p {
+//	@include centredFlex ();
+//}
+
+//div {
+//	@include centredFlex (flx);
+//}
+
+//button {
+//	@include centredFlex (inline-flex);
+//}
+
+$icons: "fecebook", "linkedin", "twitter";
+
+@each $iconName in $icons {
+	.icon-#{$iconName} {
+		background-image: url("../IMG/icon/#{$iconName}.svg");
+	}
+}
+
+@mixin generateIcons ($iconList) {
+	@each $iconName in $iconList {
+			.icon-#{$iconName} {
+				background-image: url("../IMG/icon/#{$iconName}.svg");
+			}
+		}
+}
+
+@include generateIcons($icons);
