@@ -1,400 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>git</title>
-	 <link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>7 leson</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-	 <link rel="stylesheet" href="./CSS/common.css">
-	 <link rel="stylesheet" href="./CSS/main.min.css">
-  </head>
-  <body class="page">
-	  <!-- 
-		!шапка сайта
-	-->
+	<link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+	<!--PAGE-HEADER-->
 	<header class="page-header">
-	<div class="container nav">
-	  <nav class="nav">
-		  <a href="./index.html" class="logo"> 
-					<samp class="accent">Web</samp>Studio</a>
-			
+	<div class="container page-header__wrappere">
+		<nav class="page-header__nav">
+		<!-- LOGO -->
+	<a href="./index.html" class="logo page-heder__logo">
+		<samp class="logo__label">Web</samp>Studio
+	</a>
+	<!-- SITE-NAV -->
 	<ul class="site-nav list">
-		  <li class="item"><a href="./index.html" class="link current">Studio</a></li>
-		  <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-		  <li class="item"><a href="" class="link">Contact</a></li>
-	</ul>
-	  </nav>
+		<li class="site-nav item">
+			<a href="./index.html" class="site-nav__link--current">Studio</a>
+		</li>
 
-	<ul class="auth-nav list">
-	  <li class="auth-nav-item">
-		<a class="contacts-data" href="mailto:info@devstudio.com">
-			<svg class="contacts-svg" width="16" height="12"><use href="./IMG/sprite.svg#envelope"></use></svg>info@devstudio.com
-		</a>
-	  </li>
-	  <li class="auth-nav-item">
-		<a href="tel:+380961111111" class="contacts-data"><svg class="contacts-svg" width="16" height="12"><use href="./IMG/sprite.svg#tel"></use></svg>+38 096 111 11 11
-		</a>
-	  </li>
+		<li class="site-nav__item">
+			<a href="./portfolio.html" class="site-nav__link">Portfolio</a>
+		</li>
+
+		<li class="site-nav__item">
+			<a href="" class="site-nav__link">Contacts</a>
+		</li>
+	</ul>
+	</nav>
+	<!-- CONTACTS -->
+	<ul>
+		<li>
+			<a class="contacts__link" href="mailto:info@devstudio.com">
+				<svg class="contacts__icon" width="16" height="12">
+					<use href=./IMG/sprite.svg#envelope></use></svg>info@devstudio.com
+			</a>
+		</li>
+		<li class="contacts__item"><a class="contacts__link" href="tel:+380961111111" >
+			<svg class="contacts__icon" width="16" height="12">
+				<use href=./IMG/sprite.svg#tel></use></svg>+38 096 111 11 11
+			</a>
+		</li>
 	</ul>
 	</div>
 	</header>
-	  
-	  <main> 
-	  <!--герой-->
-	  <div class="list">
-		  <section class="hero">
-			  <h1 class="hero-title">Solutions <br />for your business</h1>
-			  <button type="button" class="button prime" data-modal-open >Order service</button>
-		  </section>
-	  </div>
-	  <!--преимущества-->
-
-	  <section class="section-advantages">
-		<div class="container">
-			 <H2 class="visually-hidden">Advantages</H2>
-		  <ul class="advantages list">
-
-			<li class="advantages-item">
-				<div class="advantages-icon">
-					 <svg class="" width="70" height="70">
-						<use href="./IMG/sprite.svg#antenna"></use>
-					 </svg>
-				</div>
-				  <h3 class="advantages-title">Attention to detail</h3><p class="advantages-text">Ideological markets, as well as the beginning of daily work on the formation of a position.</p>
-			</li>
-			<li class="advantages-item">
-				<div class="advantages-icon">
-					<svg width="70" height="70">
-						<use href="./IMG/sprite.svg#clock"></use>
-					</svg>
-				</div>
-				<h3 class="advantages-title">Punctuality</h3><p class="advantages-text">The task of the organization, in particular the framework and place of training of personnel entails.</p>
-			</li>
-			<li class="advantages-item">
-				<div class="advantages-icon">
-					<svg width="70" height="70">
-						<use href="./IMG/sprite.svg#diagram"></use>
-					</svg>
-				</div>
-				<h3 class="advantages-title">Planning</h3><p class="advantages-text">Similarly, consultation with a broad asset is largely conditional.</p>
-			</li>
-			<li class="advantages-item">
-				<div class="advantages-icon">
-					<svg width="70" height="70">
-						<use href="./IMG/sprite.svg#astronaut"></use>
-					</svg>
-				</div>
-				<h3 class="advantages-title">Modern technology</h3><p class="advantages-text">The significance of these problems is so obvious that the implementation of planned targets.</p>
-			</li>
-		  </ul>
-		</div>
-	  </section>
-
-	  <!--примеры работ-->
-
-	  <section class="examples">
-<div class="container">
-			  <h2 class="page-title">What we do</h2>
-	<ul class="examples-list list">
-			  <li class="examples-img">
-				<div class="thumb"> <img src="./IMG/Web/box1.png" alt="typing on laptop" width="370" height="294"/>
-				<div class="examples-description"> <p class="text">Desktop applications</p></div>
-			</div>
-		</li>
-			  <li class="examples-img">
-				<div class="thumb"> <img src="./IMG/Web/box2.png" alt="design smartphon" width="370" height="294" />
-				<div class="examples-description"> <p class="text">Mobile applications</p></div>
-			</div> 
-		</li>
-			  <li class="examples-img">
-				<div class="thumb"> <img src="./IMG/Web/box3.png" alt="draw on tablet" width="370" height="294"/>
-				<div class="examples-description"> <p class="text">Design solutions</p></div>
-			</div>
-		</li>
-	</ul>
-</div>
-	  </section>
-
-	  <!--Наша команда-->
-
-	  <section class="comandos">
-<div class="container">
-			  <h2 class="page-title">Our Comandos</h2>
-			  
-		  <ul class="comandos-list list">
-			  <li class="comandos-box">
-					<img class="" src="./IMG/Staff/img.png" alt="specialist Product Designer" width="270" height="260"/>
-
-					<div class="comandos-content">
-						<h3 class="comandos-title">Igor Demyanrnko</h3><p class="comandos-text">Product Designer</p>
-
-						<ul class="social-network-list list">
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#instagram"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#twitter"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#facebook"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#linkedin"></use>
-							</svg></a></li>
-						</ul>
-					 </div>
-			  </li>
-			  <li class="comandos-box">
-					<img class="" src="./IMG/Staff/img-1.png" alt="specialist Frontend Developer" width="270" height="260"/>
-					<div class="comandos-content">
-						<h3 class="comandos-title">Olga Repena</h3> <p class="comandos-text">Frontend Developer</p>
-						<ul class="social-network-list list">
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#instagram"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#twitter"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#facebook"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#linkedin"></use>
-							</svg></a></li>
-						</ul>
-					</div>
-
-			  </li>
-			  <li class="comandos-box">
-					<img class="" src="./IMG/Staff/img-2.png" alt="specialist Marketing" width="270" height="260"/>
-					<div class="comandos-content">
-						<h3 class="comandos-title">Nikolay Tarasov</h3> <p class="comandos-text">Marketing</p>
-						<ul class="social-network-list list">
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#instagram"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#twitter"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#facebook"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#linkedin"></use>
-							</svg></a></li>
-						</ul>
-					</div>
-
-			  </li>
-			  <li class="comandos-box">
-					<img class="" src="./IMG/Staff/img-3.png" alt="specialist Designer" width="270" height="260"/>
-					<div class="comandos-content">
-						<h3 class="comandos-title">Mihail Ermakov</h3> <p class="comandos-text">UI Designer</p>
-						<ul class="social-network-list list">
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#instagram"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#twitter"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#facebook"></use>
-							</svg></a></li>
-							<li class="social-network-item"> <a class="social-network-link link" href=""><svg class="social-network-svg"> 
-								<use href="./IMG/sprite.svg#linkedin"></use>
-							</svg></a></li>
-						</ul>
-					</div>
-			  </li>
-		  </ul>
-</div>
-	  </section>
-
-	  <section class="section-client">
-<div class="container">
-	<h2 class="page-title"> Our client</h2>
+	<main>
+		<!-- HERO -->
+		<section class="hero">
+			<h1 class="hero__title">Solutions <br />for your business</h1>
+			<button type="button" class="button--primary" data-modal-open >Order service></button>
+		</section>
+		<!-- FEATURES -->
+		<section class="section-features">
 <div>
-	<ul class="client-list list">
-<li class="client-item">
-	<a class="client-link link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo"></use></svg></a>
-</li>
-<li class="client-item">
-	<a class="client-link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo-1"></use></svg></a>
-</li>
-<li class="client-item">
-	<a class="client-link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo-2"></use></svg></a>
-</li>
-<li class="client-item">
-	<a class="client-link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo-3"></use></svg></a>
-</li>
-<li class="client-item">
-	<a class="client-link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo-4"></use></svg></a>
-</li>
-<li class="client-item">
-	<a class="client-link" href=""><svg class="client-svg"><use href="./IMG/sprite.svg#logo-5"></use></svg></a>
-</li>
+	<h2></h2>
+	<ul>
+		<li>
+			<div>
+
+			</div>
+			<h3></h3>
+		</li>
+		<li>
+			<div>
+
+			</div>
+			<h3></h3>
+		</li>
+		<li>
+			<div>
+
+			</div>
+			<h3></h3>
+		</li>
+		<li>
+			<div>
+
+			</div>
+			<h3></h3>
+		</li>
 	</ul>
 </div>
-</div>
-
-	  </section>
+		</section>
 	</main>
-
-
-
-
-	<footer class="footer">
-		<div class="container">
-
-			 <div class="address">
-			 <address>
-		 <a href="./index.html" class="footer-logo">
-			<samp class="accent">Web</samp>Studio</a>
-			<ul class="list">
-			  <li class="footer-item">
-				<a href="https://goo.gl/maps/rWH6WUW4P8LsXruM8" class="footer-contacts city">Kyiv, Lesia Ukrainka Ave, 26</a></li>
-			  <li class="footer-item"><a href="" class="footer-contacts">info@devstudio.com</a></li>
-			  <li class="footer-item last"><a href="tel:+380991111111" class="footer-contacts">+38 096 111 11 11</a></li>
-			</ul>
-		</address>
-		</div>
-
-		<div class="join">
-			<h3 class="join-title">Join to us</h3>
-			<ul class="join-list list">
-<li class="join-item"><a class="join-link link" href=""><svg class="join-svg"><use href="./IMG/sprite.svg#instagram"></use></svg></a></li>
-<li class="join-item"><a class="join-link link" href=""><svg class="join-svg"><use href="./IMG/sprite.svg#twitter"></use></svg></a></li>
-<li class="join-item"><a class="join-link link" href=""><svg class="join-svg"><use href="./IMG/sprite.svg#facebook"></use></svg></a></li>
-<li class="join-item"><a class="join-link link" href=""><svg class="join-svg"><use href="./IMG/sprite.svg#linkedin"></use></svg></a></li>
-			</ul>
-		</div>
-
-
-		<!--mailing-->
-
-<div class="mailing">
-<form class="mailing-form">
-	<h3 class="mailing-title">subscribe to newsletter</h3>
-	<div class="mailing-wrapper">
-		<label >
-			<input class="mailing-input" type="email" name="email" placeholder="E-mail">
-		</label>
-
-	<button  type="submit" class="mailing-submit">Subscribe
-		<svg width="24" height="24" class="mailing-svg">
-			<use href=./IMG/sprite.svg#icon-icon-send></use>
-		</svg>
-	</button>
-	</div>
-</form>
-</div>
-
-
-		</div>
-	</footer>
-
-
-<!-- MOdAL  -->
-
-	<div class="backdrop is-hidden" data-modal>
-	<div class="modal"> 
-		<button class="button-modal" data-modal-close>
-		<svg width="" height=""><use href="./IMG/sprite.svg#close"></use></svg></button>
-
-		<form class="form">
-		<p class="form-act ">Leave your details, we will call you back</p>
-
-		<div class="form-field">
-
-		<label class="form-label">
-		<span class="form-about">Name</span>
-	<input class="form-input" type="text" name="name" placeholder=" ">
-	<svg class="form-svg" width="18" height="18">
-		<use href="./IMG/sprite.svg#User"></use></svg>
-		</label>
-		</div>
-
-	
-
-<div class="form-field">
-		  <label class="form-label">
-			<span class="form-about">Phone number</span>
-	<input class="form-input" type="tel" name="tel" placeholder="">
-	<svg class="form-svg" width="18" height="18"><use href="./IMG/sprite.svg#Tel"></use></svg>
-  </label>
-</div>
-
-<div class="form-field">
-	<label class="form-label">
-	<span class="form-about">Mail</span>
-		<input class="form-input" type="email" name="email" placeholder="">
-	<svg class="form-svg" width="18" height="18"><use href="./IMG/sprite.svg#Mail"></use></svg>
-  </label>
-</div>
-
-
-
-	<div class="form-field">
-		<label class="form-label">
-			<span class="form-about">Coment</span>
-			<textarea name="coment"  class="form-coment-textarea" placeholder="Imput text"></textarea>
-		</label>
-	</div>
-
-	<div class="check">
-	<label  class="form-check-label">
-		<input type="checkbox" name="check" class="form-check-input" placeholder="">
-		<span class="checkbox-svg"></span>
-		I Agree <a href="" class="check-link">Terms of an agreement</a>
-	</label>
-	</div>
-
-	<button type="submit" class="form-submit">Submit</button>
-
-</form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-</div>
-
-
-<script src="./js/modal.js"></script>
-
-  </body>
+</body>
 </html>
-
-
-
