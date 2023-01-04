@@ -1,0 +1,25 @@
+.team {
+	background-color: #F5F4FA;
+}
+
+.team__title {
+	margin-bottom: 50px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+}
+
+.team__names{
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.18;
+	color: $primary-text-color;
+}
+.team__text {
+	margin-bottom: 16px;
+	font-size: 16px;
+	line-height: 1.18;
+	color: $Secondary-text-color;
+}

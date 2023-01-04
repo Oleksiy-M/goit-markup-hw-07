@@ -1,34 +1,13 @@
 /* ============= CONTACTS ============= */
-.contacts {
-	display: flex;
-	margin-left: auto;
+.contacts__link{
+text-decoration: none;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+font-weight: 500;
+color: $Secondary-text-color;
+&:hover, &:focus{
+	color:$Accent;
+	fill: $Accent;
 }
-
-.contacts__item {
-	&:not(:last-child) {
-		margin-right: 50px;
-	}
-}
-
-.contacts__link {
-	display: block;
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-	color: $Secondary-text-color;
-	fill: $svg-color;
-	transition: color $animation,
-		fill $animation;
-
-	&:hover,
-	&:focus {
-		color: $Accent;
-		fill: $Accent;
-	}
-}
-
-.contacts__icon {
-	margin-right: 10px;
 }
