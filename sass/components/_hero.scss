@@ -1,18 +1,21 @@
 /*=================== HERO ================= */
-.hero-title{
+.hero__title{
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	margin-bottom: 30px;
 	text-transform: uppercase;
-		color: $White-color;
+	color: $White-color;
 }
 
 .hero{
-	width: 1600px;
+	max-width: 1600px;
 	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
 	background-color: #2F303A;
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
+

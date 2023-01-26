@@ -1,4 +1,15 @@
 /*================== PAGE-HEADER ====================== */
 .page-header {
-	
+padding-top: 24px;
+padding-bottom: 24px;
+border-bottom: 1px solid #ECECEC;
+}
+.page-header__wrappere {
+	display: flex;
+	align-items: center;
+}
+.page-header__nav {
+	display: flex;
+	align-items: center;
+
 }

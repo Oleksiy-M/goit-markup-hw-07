@@ -1,13 +1,28 @@
 /* ============= CONTACTS ============= */
-.contacts__link{
+.contacts {
+	display: flex;
+	margin-left: auto;
+}
+.contacts__item {
+	&:not(:last-child) {
+	margin-right: 50px;
+	}
+}
+.contacts__link {
+	display: block;
 text-decoration: none;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 font-weight: 500;
+fill: $svg-color;
 color: $Secondary-text-color;
 &:hover, &:focus{
 	color:$Accent;
 	fill: $Accent;
 }
+}
+
+.contacts__icon {
+	margin-right: 10px;
 }
