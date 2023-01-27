@@ -3,17 +3,37 @@
 	display: flex;
 }
 
-.features__title{
+.features__item {
+	width: 270px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+
+.features__icon {
+	width: 270px;
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+	background: #F5F4FA;
+	border-radius: 4px;
+}
+
+.features__title {
+	margin-bottom: 10px;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
 }
 
-.features__text{
+.features__text {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
 	color: $Secondary-text-color;
 }
-
