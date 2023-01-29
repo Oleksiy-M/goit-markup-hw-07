@@ -1,5 +1,22 @@
 /*=================== HERO ================= */
-.hero__title{
+.hero {
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)),
+		url('../IMG/giro/Img.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	background-color: #2F303A;
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.hero__title {
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -7,15 +24,3 @@
 	text-transform: uppercase;
 	color: $White-color;
 }
-
-.hero{
-	max-width: 1600px;
-	height: 600px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: #2F303A;
-	text-align: center;
-	padding-top: 200px;
-	padding-bottom: 200px;
-}
-
