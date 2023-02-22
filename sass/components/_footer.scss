@@ -1,7 +1,23 @@
-.page-footer{
-	background-color:#2F303A;
+/* =================== FOOTER =================== */
+.page-footer {
+	background-color: #2F303A;
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+.page-footer__address {
+	display: inline-flex;
+
+}
+
+.page-footer__logo {
+	display: block;
+	margin-bottom: 20px;
+	color: $White-color;
+}
+
+.page-footer__contacts--city {
+	color: $White-color;
 }
 
 .page-footer__contacts {
@@ -9,9 +25,17 @@
 	font-size: 14px;
 	line-height: 1.71;
 	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	transition: color $animation;
+
+	&:hover,
+	&:focus {
+		color: $Accent;
+	}
 }
 
-.page-footer__logo {
-	margin-bottom: 20px;
-	color: $White-color;
+.page-footer__item {
+	&:not(:last-child) {
+		margin-bottom: 9px;
+	}
 }

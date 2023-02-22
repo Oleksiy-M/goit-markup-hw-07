@@ -20,15 +20,20 @@
 	<samp class="logo__label">Web</samp>Studio</a>
 <!-- SITE-NAV -->
 <ul class="site-nav list">
-	<li class="site-nav__item"><a href="./index.html" class="site-nav__link">Studio</a></li>
-	<li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link site-nav__link--current">Portfolio</a></li>
+	<li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link">Studio</a></li>
+	<li class="site-nav__item"><a href="./portfolio.html"class="site-nav__link--current">Portfolio</a></li>
 	<li class="site-nav__item"><a href="" class="site-nav__link ">Contacts</a></li>
 </ul>
 <!-- CONTACTS -->
 <ul class="contacts list">
-	<li class="contacts__item"><a class="contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+	<li class="contacts__item">
+		<a class="contacts__link" href="mailto:info@devstudio.com">
+		<svg class="contacts__icon" width="16" height="12" ><use href=./img/sprite.svg#envelope></use></svg>info@devstudio.com
+		</a>
 	</li>
-	<li class="contacts__item"><a class="contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+	<li class="contacts__item">
+		<a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="16" height="12"><use href=./img/sprite.svg#tel></use></svg>+38 096 111 11 11
+		</a></li>
 </ul>
 </nav>
 </div>
@@ -40,95 +45,189 @@
 	<h1 class="visually-hidden">Portfolio</h1>
 <!-- FILTER -->
 <ul class="filter filter__list list">
-	<li class="filter__item"></li>
-	<li class="filter__item"></li>
-	<li class="filter__item"></li>
-	<li class="filter__item"></li>
-	<li class="filter__item"></li>
+	<li class="filter__item"><button type="button" class="button button--secondary">All</button></li>
+	<li class="filter__item"><button type="button" class="button button--secondary">Web-sites</button></li>
+	<li class="filter__item"><button type="button" class="button button--secondary">App</button></li>
+	<li class="filter__item"><button type="button" class="button button--secondary">Design</button></li>
+	<li class="filter__item"><button type="button" class="button button--secondary">Marketing</button></li>
 </ul>
-<ul>
-	<li>
-	<a href="">
-		<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-	<a href="">
-		<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-	<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
-	<li>
-		<a href="">
-			<h3></h3>
-			<p></p>
-			</a>
-	</li>
+<!-- CARDS -->
+<ul class="cards list">
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img.jpg" alt="Company employees" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Tech crack</h2><p class="cards__text">Web site</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-1.jpg" alt="basketball" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">New Orlean vs Golden Star poster</h2><p class="cards__text">Design</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-2.jpg" alt="restaurant advertisement" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Seafood Restaurant</h2><p class="cards__text">Applications</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-3.jpg" alt="Headphones width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Tech crack</h2><p class="cards__text">Web site</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-4.jpg" alt="Two cardboard boxes" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Project Prime</h2><p class="cards__text">Marketing</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-5.jpg" alt="Monitor" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Project Boxes</h2><p class="cards__text">Applications</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-6.jpg" alt="Advertising booklet" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Inspiration has no Borders</h2><p class="cards__text">Web site</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./IMG/Project/img-7.jpg" alt="token" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Limited Edition</h2><p class="cards__text">Design</p>
+		</div>
+	</a>
+</li>
+<li class="cards__item">
+	<a href="" class="cards__link">
+		<div class="cards__thumb">
+			<img src="./img/Project/img-8.jpg" alt="Laptop" width="370" height="294" class="cards-photo">
+				<div class="cards__overlay">
+				<p class="cards__alert">The resource offers complex offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or a private person.</p>
+				</div>
+		</div>
+		<div class="cards__content">
+			<h2 class="cards__title">Growing Business</h2><p class="cards__text">Marketing</p>
+		</div>
+	</a>
+</li>
+
 </ul>
 </div>
 </section>
 </main>
 
 <!--Footer-->
-<footer>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
+<footer class="page-footer">
+<div class="container">
+
+<div class="page-footer__address">
+<address>
+	<a href="" class="logo page-footer__logo"><samp class="logo__label">Web</samp>Studio</a>
+	<ul class="page-footer__list list">
+		<li class="page-footer__item">
+			<a class="page-footer__contacts page-footer__contacts--city" href="https://goo.gl/maps/dV1eHeY4zasvSxY77" target="_blank" rel="noopener noreferrer">Kyiv, Lesia Ukrainka Ave, 26</a></li>
+		<li class="page-footer__item">
+			<a href="mailto:info@example.com" class="page-footer__contacts">info@devstudio.com</a></li>
+		<li class="page-footer__item">
+			<a href="tel:+380991111111" class="page-footer__contacts">+38 096 111 11 11</a></li>
 	</ul>
-	<div>
-		<h3></h3>
-	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
+</address>
+</div>
+<!-- JOIN -->
+<div class="join">
+<h3 class="join__title">JOIN TO US</h3>
+	<ul class="join__list list">
+		<li class="join__item"><a class="join__link link" href="">
+			<svg class="join__icon"><use href="./IMG/sprite.svg#instagram"></use></svg></a></li>
+		<li class="join__item"><a class="join__link link" href="">
+			<svg class="join__icon"><use href=./img/sprite.svg#twitter></use></svg></a></li>
+		<li class="join__item"><a class="join__link link" href="">
+			<svg class="join__icon"><use href=./img/sprite.svg#facebook></use></svg></a></li>
+		<li class="join__item"><a class="join__link link" href="">
+			<svg class="join__icon"><use href=./img/sprite.svg#linkedin></use></svg></a></li>
 	</ul>
-	</div>
-	<div>
-		<form action="">
-			<h3></h3>
-			<div>
-				<button></button>
-			</div>
-		</form>
-	</div>
+</div>
+<!-- AUTH -->
+<div class="auth">
+	<form class="auth__form">
+		<h3 class="auth__title">Subscribe to newsletter</h3>
+		<div class="auth__wrapper">
+			<label><input class="auth__input" type="email" name="email" placeholder="E-mail"></label>
+			<button type="submit" class="button button--submit">Subscribe
+			<svg width="24" height="24" class="button__icon"><use href="./IMG/sprite.svg#send"></use></svg></button>
+		</div>
+	</form>
+</div>
+
+</div>
 </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+

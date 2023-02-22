@@ -1,4 +1,41 @@
+/* ============= clients ============= */
+.clients__title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
 .clients__list {
 	display: flex;
 	justify-content: center;
+}
+
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $svg-color;
+	border-radius: 4px;
+	fill: $svg-color;
+	transition: border $animation,
+		fill $animation;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $Accent;
+		fill: $Accent;
+	}
+}
+
+.clients__item {
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.clients__icon {
+	width: 170px;
+	height: 92px;
 }

@@ -1,0 +1,49 @@
+/*================= join ================= */
+.join {
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 70px;
+}
+
+.join__title {
+	display: inline-flex;
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+	color: $White-color;
+}
+
+.join__list {
+	display: flex;
+}
+
+.join__item {
+	padding: 0;
+
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.join__link {
+	text-align: center;
+	padding: 12px;
+	width: 44px;
+	height: 44px;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 50%;
+	transition: background-color $animation;
+
+	&:hover,
+	&:focus {
+		background: $Accent;
+	}
+}
+
+.join__icon {
+	width: 20px;
+	height: 20px;
+	fill: $White-color;
+}
