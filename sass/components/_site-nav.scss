@@ -1,11 +1,16 @@
 /* =================SITE-NAV  ================= */
-.site-nav{
-display: flex;
+.site-nav {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	display: flex;
 	font-weight: 500;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
 }
+
 .site-nav__link {
 	display: block;
 	text-decoration: none;
@@ -17,14 +22,18 @@ display: flex;
 		color: $Accent;
 	}
 }
-.site-nav__link--current{
-color: $Accent;
+
+.site-nav__link--current {
+	color: $Accent;
+
 }
-.site-nav__item{
-&:not(:last-child){
-	margin-right: 50px;
+
+.site-nav__item {
+	&:not(:last-child) {
+		margin-right: 50px;
+	}
 }
-}
+
 .site-nav__link--current {
 	display: block;
 	position: relative;
@@ -38,7 +47,9 @@ color: $Accent;
 		background: $Accent;
 		border-radius: 2px;
 		left: 0;
-		bottom: -32px;
+		bottom: -34px;
 	}
-}
 
+
+
+}

@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>восьмой-урок</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
 	<link rel="stylesheet" href="./css/mine.min.css">
 </head>
@@ -28,18 +29,43 @@
 <ul class="contacts list">
 	<li class="contacts__item">
 		<a class="contacts__link" href="mailto:info@devstudio.com"><svg class="contacts__icon" width="16" height="12" >
-			<use href=./img/sprite.svg#envelope></use></svg>info@devstudio.com
-		</a>
+			<use href=./IMG/sprite.svg#envelope></use></svg>info@devstudio.com</a>
 	</li>
 	<li class="contacts__item">
 		<a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="16" height="12">
-			<use href=./img/sprite.svg#tel></use></svg>+38 096 111 11 11
-		</a>
+			<use href=./IMG/sprite.svg#tel></use></svg>+38 096 111 11 11</a>
 	</li>
 </ul>
 </nav>
 </div>
 </header>
+
+<!-- MOBILE -->
+<div class="mobile is-open" data-menu>
+		<div class="container mobile__container">
+			<button type="button" class="mobile__button-close" data-menu-close>
+					<svg class="mobile__icon" ><use href=./images/sprite.svg#icon-close></use></svg>
+			</button>
+				<nav class="mobile__nav">
+					<ul class="mobile__list list">
+						<li class="mobile__item"><a class="mobile__link link current " href="">Студия</a></li>
+						<li class="mobile__item"><a class="mobile__link link" href="./portfolio.html" >Портфолио</a></li>
+						<li class="mobile__item"><a class="mobile__link link" href="">Контакты</a></li>
+					</ul>
+				</nav>
+		<ul class="mobile-contacts list">
+			<li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+			<li class="mobile-contacts__item"><a class="mobile-contacts__link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+		</ul>
+		<ul class="mobile-network list">
+			<li class="mobile-network__item"><a class="mobile-network__link link" href="">Instagram</a></li>
+			<li class="mobile-network__item"><a class="mobile-network__link link" href="">Twitter</a></li>
+			<li class="mobile-network__item"><a class="mobile-network__link link" href="">Facebook</a></li>
+			<li class="mobile-network__item"><a class="mobile-network__link link" href="">LinkedIn</a></li>
+		</ul>
+		</div>
+</div>
+
 <main>
 <!-- HERO -->
 <section class="hero">
@@ -157,7 +183,7 @@
 		<svg class="social-network__icon"><use href="./IMG/sprite.svg#linkedin"></use></svg></a></li>
 </ul>
 	</div>
-	</li>
+	</li>	
 
 	<li class="team__item"><img src="./IMG/Staff/img-3.png" alt="A man in a black T-shirt" width="270" height="260">
 		<div class="team__content">
