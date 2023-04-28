@@ -1,20 +1,26 @@
 /* ====================== LOGO ====================== */
 .logo {
-	font-family: Raleway,sans-serif;
+	font-family: Raleway, sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 26px;
-	line-height: 1.2;
+	font-size: 24px;
+	line-height: 1.16;
 	text-decoration: none;
 	transition: color $animation;
-	&:hover,&:focus {
+
+	&:hover,
+	&:focus {
 		color: $Accent;
 	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		line-height: 1.2;
+	}
+
+
 }
-.page-header__logo {
-margin-right: 93px;
-color: #000000;
-}
+
 .logo__label {
 	font-family: Raleway, sans-serif;
 	color: $Accent;
