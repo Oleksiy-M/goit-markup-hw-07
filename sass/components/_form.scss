@@ -3,7 +3,6 @@
 .form {
 	display: inline-flex;
 	flex-direction: column;
-
 }
 
 .form__text {
@@ -15,8 +14,6 @@
 }
 
 .form__label {
-	text-align: left;
-
 	margin-bottom: 10px;
 	font-size: 12px;
 	line-height: 14px;
@@ -32,8 +29,9 @@
 
 .form__input {
 	padding-left: 42px;
+
 	height: 40px;
-	width: 100%;
+	width: 448px;
 	border-radius: 4px;
 	border: 1px solid #21212133;
 	transition: border $animation;
@@ -96,33 +94,18 @@
 }
 
 .form__check--label {
+	margin-bottom: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
 	color: $Secondary-text-color;
 
-	@media screen and (max-width: 1199px) {
-		font-size: 12px;
-		line-height: 1.16;
-		margin-bottom: 31px;
-		display: flex;
-		align-items: center;
-	}
-
-	@media screen and (min-width: 1200px) {
-		font-size: 14px;
-		line-height: 1.17;
-		text-align: center;
-		margin-bottom: 30px;
-
-	}
-
 	&::before {
-		@media screen and (min-width: 1200px) {
-			margin-right: 7px;
-		}
-
-		margin-right: 5px;
-		vertical-align: middle;
 		display: inline-block;
+		vertical-align: middle;
 		content: "";
+		margin-right: 7px;
 		height: 15px;
 		width: 16px;
 		border-radius: 4px;
@@ -132,7 +115,7 @@
 	}
 }
 
-.form__check--input:checked~.form__check--label::before {
+.form__check--input:checked~.form__check--label:before {
 	background-color: $Accent;
 	border-color: $Accent;
 	background-image: url('../IMG/icon\ check.svg');
@@ -141,9 +124,5 @@
 }
 
 .form__link {
-	@media screen and (max-width: 1199px) {
-		margin-left: 2px;
-	}
-
 	color: hsla(207, 90%, 54%, 1);
 }

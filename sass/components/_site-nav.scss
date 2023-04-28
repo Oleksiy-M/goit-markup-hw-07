@@ -1,9 +1,5 @@
 /* =================SITE-NAV  ================= */
 .site-nav {
-	@media screen and (max-width: 767px) {
-		display: none;
-	}
-
 	display: flex;
 	font-weight: 500;
 	font-size: 14px;
@@ -25,7 +21,6 @@
 
 .site-nav__link--current {
 	color: $Accent;
-
 }
 
 .site-nav__item {
@@ -47,9 +42,6 @@
 		background: $Accent;
 		border-radius: 2px;
 		left: 0;
-		bottom: -34px;
+		bottom: -32px;
 	}
-
-
-
 }

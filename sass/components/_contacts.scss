@@ -1,58 +1,30 @@
 /* ============= CONTACTS ============= */
 .contacts {
-@media screen and (max-width: 767px) {
-		display: none;
-	}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-		display: flex;
-		margin-left: auto;
-		flex-direction: column;
-	}
-
-@media screen and (min-width: 1200px) {
-		display: flex;
-		margin-left: auto;
-	}
+	display: flex;
+	margin-left: auto;
 }
 
 .contacts__item {
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-		&:not(:last-child) {
-			margin-bottom: 10px;
-		}
-	}
-
-@media screen and (min-width: 1200px) {
-		&:not(:last-child) {
-			margin-right: 50px;
-		}
+	&:not(:last-child) {
+		margin-right: 50px;
 	}
 }
 
 .contacts__link {
 	display: block;
-	font-weight: 500;
+	text-decoration: none;
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
-	text-decoration: none;
-	color: $Secondary-text-color;
+	font-weight: 500;
 	fill: $svg-color;
-	transition: color $animation, fill $animation;
+	color: $Secondary-text-color;
 
 	&:hover,
 	&:focus {
 		color: $Accent;
 		fill: $Accent;
 	}
-
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
-		font-size: 12px;
-		font-weight: 500;
-		line-height: 1.16;
-	}
-
 }
 
 .contacts__icon {

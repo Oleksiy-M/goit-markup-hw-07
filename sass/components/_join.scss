@@ -1,27 +1,12 @@
 /*================= join ================= */
 .join {
-	@media screen and (max-width: 767px) {
-		margin-bottom: 60px;
-		text-align: center;
-	}
-
-	@media screen and (max-width: 1199px) {
-		padding-top: 7px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		display: inline-flex;
-		flex-direction: column;
-		margin-left: 70px;
-	}
-
+	display: inline-flex;
+	flex-direction: column;
+	margin-left: 70px;
 }
 
 .join__title {
-	@media screen and (min-width: 768px) {
-		display: flex;
-	}
-
+	display: inline-flex;
 	margin-bottom: 20px;
 	font-weight: 700;
 	font-size: 14px;
@@ -32,8 +17,6 @@
 
 .join__list {
 	display: flex;
-	justify-content: center;
-
 }
 
 .join__item {
